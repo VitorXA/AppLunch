@@ -1,0 +1,58 @@
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Header-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--brand);
+}
+
+.Header-user {
+  margin-left: auto;
+  color: var(--text);
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Header-logout {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.Header-logout:focus-visible,
+.Header-tabs button:focus-visible {
+  outline: 3px solid #1d4ed8;
+}
+
+.Header-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.Header-tabs button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--brand);
+  border-radius: 10px;
+  background: white;
+  color: var(--brand);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Header-tabs button[aria-pressed='true'] {
+  background: var(--brand);
+  color: white;
+}

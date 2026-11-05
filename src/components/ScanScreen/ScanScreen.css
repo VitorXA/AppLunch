@@ -1,0 +1,88 @@
+#headerApp {
+  margin: 0;
+  color: var(--brand);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#backgroundScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--brand-soft);
+  border-radius: 24px;
+  width: 100%;
+  padding: 28px 24px;
+  box-sizing: border-box;
+}
+
+.Viewfinder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #0b1415;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.Viewfinder[hidden] {
+  display: none;
+}
+
+.Viewfinder video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* efeito espelho, mais natural para o usuário */
+}
+
+.MealArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.MealNow {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Windows {
+  margin: 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.Consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.Consent input {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.DeleteFace {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.DeleteFace input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b9c7c8;
+  box-sizing: border-box;
+}

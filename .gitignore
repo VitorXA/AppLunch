@@ -1,0 +1,24 @@
+# dependências e build
+node_modules/
+dist/
+
+# segredos e dados locais — nunca versionar
+.env
+.env.*
+!.env.example
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# logs e sistema
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# editores
+.vscode/*
+!.vscode/extensions.json
+.idea/

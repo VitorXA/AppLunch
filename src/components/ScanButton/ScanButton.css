@@ -1,0 +1,17 @@
+.buttonScan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand);
+  border: none;
+  border-radius: 25px;
+  padding: 22px;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.buttonScan:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

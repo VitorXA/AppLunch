@@ -1,0 +1,17 @@
+# Uso: copie .env.example para .env, configure FACE_PROVIDER e rode `docker compose up -d --build`.
+# Em produção o servidor se recusa a iniciar com FACE_PROVIDER=mock.
+services:
+  applunch:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      DATABASE_PATH: /data/applunch.db
+    volumes:
+      - applunch-data:/data
+    restart: unless-stopped
+
+volumes:
+  applunch-data:
